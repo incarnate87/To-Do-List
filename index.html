@@ -8,9 +8,7 @@
         <style>
         .h
            {
-            color:blue;
-            display:relative;   
-            margin-left:40%; 
+            color:blue;   
             }
             .c
               {
@@ -19,7 +17,7 @@
               }
               .l
               {
-                  color:rgb(12, 8, 9);
+                  color:brown;
                   font-weight: bold;
                   font-size:1.2em;
               }
@@ -57,7 +55,6 @@
                   <tr>
                     <td><button class="btn btn-sm btn-primary">Delete</button></td> 
                   </tr>
-                  
                 </tbody>
               </table>
         </div>
@@ -113,7 +110,6 @@
                 itemJsonArray.splice(itemIndex, 1);
                 localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
                 update();
-
             }
             function clearStorage(){
                 if (confirm("Sure to clear?")){
